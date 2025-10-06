@@ -36,6 +36,12 @@ header {
     color: white;
 }
 
+.logo-img {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
 .contact-quick {
     display: flex;
     gap: 20px;
@@ -114,6 +120,11 @@ nav ul li a.active {
     max-width: 1200px;
     margin: 0 auto;
     padding: 60px 20px;
+    background: linear-gradient(rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.97)),
+                url('images/features-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /* Titoli */
@@ -145,8 +156,11 @@ h4 {
 
 /* Hero Section (Home) */
 .hero {
-    background: linear-gradient(135deg, rgba(44, 62, 80, 0.9), rgba(52, 152, 219, 0.9)),
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23cccccc" width="1200" height="600"/></svg>');
+    background: linear-gradient(135deg, rgba(44, 62, 80, 0.85), rgba(52, 152, 219, 0.75)),
+                url('images/amianto-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: white;
     text-align: center;
     padding: 100px 20px;
@@ -157,19 +171,21 @@ h4 {
     color: white;
     font-size: 3rem;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 .hero-subtitle {
     font-size: 1.3rem;
     margin-bottom: 15px;
     color: white;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
 }
 
 .hero-areas {
     font-size: 1.1rem;
     margin-bottom: 30px;
     color: white;
-    opacity: 0.9;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
 }
 
 .cta-buttons {
@@ -226,11 +242,13 @@ h4 {
     font-size: 3rem;
     font-weight: bold;
     color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 }
 
 .stat-label {
     font-size: 1.1rem;
     color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* Cards Grid */
@@ -649,6 +667,10 @@ footer a {
         text-align: left;
     }
 
+    .logo-img {
+        height: 45px;
+    }
+
     .contact-quick {
         display: none;
     }
@@ -831,6 +853,10 @@ footer a {
 @media (max-width: 480px) {
     .logo {
         font-size: 1rem;
+    }
+
+    .logo-img {
+        height: 35px;
     }
 
     .contact-quick a {
