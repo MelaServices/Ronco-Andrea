@@ -120,6 +120,10 @@ nav ul li a.active {
     max-width: 1200px;
     margin: 0 auto;
     padding: 60px 20px;
+}
+
+/* Background solo per homepage */
+.home .container {
     background: linear-gradient(rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.97)),
                 url('images/features-background.jpg');
     background-size: cover;
