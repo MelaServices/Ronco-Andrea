@@ -207,6 +207,7 @@ h4 {
     font-weight: bold;
     transition: transform 0.3s, box-shadow 0.3s;
     display: inline-block;
+    text-align: center;
 }
 
 .btn-primary {
@@ -548,6 +549,120 @@ h4 {
     font-size: 1.5rem;
 }
 
+/* CTA Grid Layout */
+.cta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-grid .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cta-grid-center {
+    max-width: 500px;
+}
+
+.cta-grid-full {
+    grid-column: 1 / -1;
+}
+
+/* Call Now Box Compact */
+.call-now-box-compact {
+    background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(39, 174, 96, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.call-now-box-compact:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.4);
+}
+
+.call-now-icon-compact {
+    font-size: 1.8rem;
+    animation: pulse 2s infinite;
+    flex-shrink: 0;
+}
+
+.call-now-box-compact a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: opacity 0.3s;
+}
+
+.call-now-box-compact a:hover {
+    opacity: 0.85;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* Call Now Box - Full Width (for contact page) */
+.call-now-box {
+    background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(39, 174, 96, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.call-now-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(39, 174, 96, 0.4);
+}
+
+.call-now-icon {
+    font-size: 2rem;
+    animation: pulse 2s infinite;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.call-now-single-line {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: white;
+}
+
+.call-now-single-line a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.3s;
+}
+
+.call-now-single-line a:hover {
+    opacity: 0.85;
+}
+
 /* Contact Form */
 .contact-container {
     display: grid;
@@ -839,6 +954,57 @@ footer a {
     .certifications-grid {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+
+    /* CTA Grid */
+    .cta-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .cta-grid-full {
+        grid-column: 1;
+    }
+
+    /* Call Now Box Compact */
+    .call-now-box-compact {
+        padding: 12px 15px;
+    }
+
+    .call-now-icon-compact {
+        font-size: 1.5rem;
+    }
+
+    .call-now-box-compact a {
+        font-size: 0.95rem;
+    }
+
+    /* Call Now Box */
+    .call-now-box {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+        padding: 20px 15px;
+    }
+
+    .call-now-icon {
+        font-size: 2rem;
+    }
+
+    .call-now-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .call-now-number {
+        font-size: 1.3rem;
+    }
+
+    .call-now-mobile {
+        font-size: 0.95rem;
+    }
+
+    .call-now-text {
+        font-size: 0.85rem;
     }
 
     /* Contact */
